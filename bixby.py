@@ -6,6 +6,7 @@ import webbrowser
 import os
 import smtplib
 import image
+import pywhatkit as kit
 
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
@@ -162,6 +163,8 @@ if __name__ == "__main__":
             image = os.listdir(image_dir)
             print(image)    
             os.startfile(os.path.join(image_dir, image[0]))
+            
+        
 
         
 
